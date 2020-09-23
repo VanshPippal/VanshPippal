@@ -18,12 +18,14 @@ public class rps {
 //3=scissors
 
 
-
         switch (user_guess) {
             case 1 -> System.out.println("You Choose Rock");
             case 2 -> System.out.println("You Choose Paper");
             case 3 -> System.out.println("You Choose Scissors");
-            default -> System.out.println("Opps!Try Again!!");
+            default -> {
+                System.out.println("Opps!Try Again!!");
+                return;
+            }
         }
         switch (computer_guess) {
             case 1 -> System.out.println("Computer Choose Rock");
@@ -57,4 +59,3 @@ public class rps {
         }
     }
 }
-
